@@ -1,0 +1,40 @@
+.footer{
+	@include section(512px/2);
+	background-color: $color1_fucsia;
+	color: $color3_white;
+}
+.footer .container{
+	justify-content: space-between;
+	align-items: center;
+}
+.footer p{
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: 0.1em;
+}
+.footer a{
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: 0.1em;
+	border-radius: 5px;
+	border: 1px solid $color3_white;
+	padding: 7px 30px 10px;
+}
+@media screen and (max-width: 868px){
+	.footer{
+		@include section_768(512px/2);
+	}
+	.footer .container{
+		flex-direction: column;
+		padding: 80px 60px;
+	}
+	.footer .container a{
+		margin-top: 33px;
+	}
+}
+@media screen and (max-width: 514px){
+	.footer .container{
+		padding: 80px 25px;
+	}
+}

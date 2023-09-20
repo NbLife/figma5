@@ -1,0 +1,44 @@
+.apps2{
+	@include section(512px);
+	@include section_picture('images/bg_2.jpg');
+	color: $color3_white;
+}
+.apps2 .container{
+	justify-content: flex-end;
+}
+.content_page_4{
+	width: 404px;
+}
+.apps2 h2{
+	font-size: 36px;
+	line-height: 24px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+.apps2 p{
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: 0.1em;
+	margin-bottom: 29px;
+}
+.apps2 a{
+	text-transform: uppercase;
+	border: 1px solid $color3_white;
+	border-radius: 5px;
+	padding: 7px 30px 10px;
+}
+@media screen and (max-width: 868px){
+	.apps2{
+		@include section_768(512px);
+	}
+	.apps2 .container{
+		justify-content: center;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 514px){
+	.apps2{
+		display: none;
+	}
+}
